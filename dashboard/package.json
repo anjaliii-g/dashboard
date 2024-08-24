@@ -4,9 +4,13 @@
   "description": "this is react proj",
   "main": "index.js",
   "dependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
     "abortcontroller-polyfill": "^1.7.5",
     "ansi-styles": "^4.3.0",
     "argparse": "^2.0.1",
+    "autoprefixer": "^10.4.20",
     "base-x": "^3.0.10",
     "boolbase": "^1.0.0",
     "braces": "^3.0.3",
@@ -67,15 +71,17 @@
     "nth-check": "^2.1.1",
     "nullthrows": "^1.1.1",
     "ordered-binary": "^1.5.1",
-    "parcel": "^2.12.0",
     "parent-module": "^1.0.1",
     "parse-json": "^5.2.0",
     "picocolors": "^1.0.1",
     "picomatch": "^2.3.1",
+    "postcss": "^8.4.41",
     "postcss-value-parser": "^4.2.0",
     "posthtml": "^0.16.6",
     "posthtml-parser": "^0.10.2",
     "posthtml-render": "^3.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-error-overlay": "^6.0.9",
     "react-refresh": "^0.9.0",
     "regenerator-runtime": "^0.13.11",
@@ -88,6 +94,7 @@
     "stable": "^0.1.8",
     "supports-color": "^7.2.0",
     "svgo": "^3.3.2",
+    "tailwindcss": "^3.4.10",
     "term-size": "^2.2.1",
     "timsort": "^0.3.0",
     "to-regex-range": "^5.0.1",
@@ -97,8 +104,12 @@
     "utility-types": "^3.11.0",
     "weak-lru-cache": "^1.2.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
   "scripts": {
+    "start": "parcel src/index.html",
+    "build": "build parcel src/index.html",
     "test": "jest"
   },
   "repository": {
