@@ -1,0 +1,52 @@
+{
+  "categories": [
+    {
+      "id": "cspm",
+      "name": "CSPM Executive Dashboard",
+      "widgets": [
+        {
+          "id": "cloudAccounts",
+          "name": "Cloud Accounts",
+          "text": "This widget displays cloud account data including connection statuses."
+        },
+        {
+          "id": "cloudAccountRiskAssessment",
+          "name": "Cloud Account Risk Assessment",
+          "text": "This widget displays cloud account risk assessments, categorized by different statuses."
+        }
+      ]
+    },
+    {
+      "id": "cwpp",
+      "name": "CWPP Dashboard",
+      "widgets": [
+        {
+          "id": "topNamespaceAlerts",
+          "name": "Top 5 Namespace Specific Alerts",
+          "text": "This widget shows the top 5 namespace-specific alerts."
+        },
+        {
+          "id": "workloadAlerts",
+          "name": "Workload Alerts",
+          "text": "This widget shows alerts related to workloads."
+        }
+      ]
+    },
+    {
+      "id": "registryScan",
+      "name": "Registry Scan",
+      "widgets": [
+        {
+          "id": "imageRiskAssessment",
+          "name": "Image Risk Assessment",
+          "text": "This widget shows an assessment of image risks, including vulnerabilities."
+        },
+        {
+          "id": "imageSecurityIssues",
+          "name": "Image Security Issues",
+          "text": "This widget shows security issues in container images."
+        }
+      ]
+    }
+  ]
+}
