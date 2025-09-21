@@ -1,0 +1,31 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "This project will create a dashboard which contains different charts and graphs.",
+  "keywords": [
+    "Dashboard",
+    "Reactjs",
+    "apexcharts",
+    "D3charts",
+    "MUI",
+    "Tailwind"
+  ],
+  "homepage": "https://github.com/anjaliii-g/dashboard#readme",
+  "bugs": {
+    "url": "https://github.com/anjaliii-g/dashboard/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anjaliii-g/dashboard.git"
+  },
+  "license": "ISC",
+  "author": "Anjali Gupta",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  }
+}
