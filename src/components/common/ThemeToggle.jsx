@@ -1,17 +1,14 @@
-import { motion } from 'framer-motion';
-import { MoonIcon, SunIcon } from 'lucide-react';
-import React from 'react';
-import { useTheme } from '../../context/ThemeContext';
-import { Button } from '../ui/button';
+import { motion } from "framer-motion";
+import { MoonIcon, SunIcon } from "lucide-react";
+import React from "react";
+import { useTheme } from "../../context/Themecontext";
+import { Button } from "../ui/button";
 
 const ThemeToggle = () => {
   const { isDark, toggleTheme } = useTheme();
 
   return (
-    <motion.div
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-    >
+    <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
       <Button
         variant="ghost"
         size="sm"
@@ -21,21 +18,21 @@ const ThemeToggle = () => {
       >
         <motion.div
           initial={false}
-          animate={{ 
+          animate={{
             rotate: isDark ? 180 : 0,
-            scale: isDark ? 0 : 1
+            scale: isDark ? 0 : 1,
           }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
           className="absolute inset-0 flex items-center justify-center"
         >
           <SunIcon className="h-4 w-4" />
         </motion.div>
-        
+
         <motion.div
           initial={false}
-          animate={{ 
+          animate={{
             rotate: isDark ? 0 : -180,
-            scale: isDark ? 1 : 0
+            scale: isDark ? 1 : 0,
           }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
           className="absolute inset-0 flex items-center justify-center"

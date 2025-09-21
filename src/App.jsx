@@ -1,13 +1,13 @@
-import { motion } from 'framer-motion';
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import DashboardContent from './components/dashboard/DashboardContent';
-import Header from './components/layout/Header';
-import NotificationsSidebar from './components/layout/NotificationsSidebar';
-import Sidebar from './components/layout/Sidebar';
-import { ThemeProvider } from './context/ThemeContext';
-import { useResponsive } from './hooks/useResponsive';
-import { OrdersListLight } from './routes/OrdersListLight/OrdersList';
+import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import DashboardContent from "./components/dashboard/DashboardContent";
+import Header from "./components/layout/Header";
+import NotificationsSidebar from "./components/layout/NotificationsSidebar";
+import Sidebar from "./components/layout/Sidebar";
+import { ThemeProvider } from "./context/Themecontext";
+import { useResponsive } from "./hooks/useResponsive";
+import { OrdersListLight } from "./routes/OrdersListLight/OrdersList";
 
 const DashboardLayout = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -19,21 +19,17 @@ const DashboardLayout = () => {
 
   return (
     <div className="flex h-screen bg-background text-foreground overflow-y-auto">
-     
-      <div className={`${isDesktop ? 'w-56' : 'w-0'} flex-shrink-0 relative`}>
-        <Sidebar 
-          isOpen={isDesktop || sidebarOpen} 
+      <div className={`${isDesktop ? "w-56" : "w-0"} flex-shrink-0 relative`}>
+        <Sidebar
+          isOpen={isDesktop || sidebarOpen}
           onClose={() => setSidebarOpen(false)}
         />
       </div>
 
-     
       <div className="flex-1 flex flex-col min-w-0">
-        
         <Header onMenuClick={toggleSidebar} />
 
-       
-        <motion.div 
+        <motion.div
           className="flex-1"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -44,8 +40,8 @@ const DashboardLayout = () => {
       </div>
 
       {/* Right Notifications Sidebar - Reduced width */}
-      <div className={`${isDesktop ? 'w-72' : 'w-0'} flex-shrink-0 relative`}>
-        <NotificationsSidebar 
+      <div className={`${isDesktop ? "w-72" : "w-0"} flex-shrink-0 relative`}>
+        <NotificationsSidebar
           isOpen={isDesktop || notificationsOpen}
           onClose={() => setNotificationsOpen(false)}
         />
