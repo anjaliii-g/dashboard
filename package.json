@@ -21,11 +21,16 @@
   "license": "ISC",
   "author": "Anjali Gupta",
   "type": "commonjs",
-  "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "build parcel index.html"
   },
   "devDependencies": {
     "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   }
 }
