@@ -23,8 +23,7 @@
   "type": "commonjs",
   "scripts": {
     "test": "jest",
-    "start": "parcel index.html",
-    "build": "build parcel index.html"
+    "start": "parcel index.html"
   },
   "devDependencies": {
     "@animaapp/vite-plugin-screen-graph": "^0.1.5",
